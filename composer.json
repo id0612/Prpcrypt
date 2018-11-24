@@ -1,0 +1,12 @@
+{
+    "name": "id0612/prpcrypt",
+    "description": "基于OpenSSL、PKCS7开发的AES加解密算法，提供加解密接口。",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Anran",
+            "email": "id0612@qq.com"
+        }
+    ],
+    "require": {}
+}
