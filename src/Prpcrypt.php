@@ -14,7 +14,7 @@ final class Prpcrypt {
      * 对明文进行加密
      * @param string $text 需要加密的明文
      * @param string $encoding_aes_key EncodingAESKey
-     * @return string 加密后的密文
+     * @return array [0, '加密后的密文'] 或 [1, '错误消息']
      */
     public static function encrypt($text, $encoding_aes_key) {
         try {
@@ -44,7 +44,7 @@ final class Prpcrypt {
      * 对密文进行解密
      * @param string $encrypted 需要解密的密文
      * @param string $encoding_aes_key EncodingAESKey
-     * @return string 解密得到的明文
+     * @return array [0, '解密得到的明文'] 或 [1, '错误消息']
      */
     public static function decrypt($encrypted, $encoding_aes_key) {
         try {
